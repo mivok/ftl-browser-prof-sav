@@ -99,9 +99,9 @@ function addButtons() {
     // Add download link
     var e = document.getElementsByClassName('base-main-wrapper')[0];
     var links = document.createElement('div');
-    links.innerHTML = "<form>" +
-        "<button id=\"FtlSave\">Save FTL prof.sav</button>" +
+    links.innerHTML = "<button id=\"FtlSave\">Save FTL prof.sav</button>" +
         "<button id=\"FtlRestore\">Restore FTL prof.sav</button>" +
+        "<form>" +
         "<input type=\"file\" id=\"FtlProfSav\" name=\"FtlProfSav\">" +
         "</form>";
     e.insertBefore(links, e.firstChild);
