@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name FTL prof.sav manager
-// @namespace http://www.mivok.net/
+// @namespace https://github.com/mivok/ftl-browser-prof-sav
 // @version 0.1
 // @author Mark Harrison
 // @description Save/restore prof.sav in FTL browser version
