@@ -5,6 +5,7 @@
 // @author Mark Harrison
 // @description Save/restore prof.sav in FTL browser version
 // @include https://www.humblebundle.com/home
+// @include https://www.humblebundle.com/home?*
 // ==/UserScript==
 //
 // Copyright (c) 2014 Mark Harrison
@@ -99,11 +100,15 @@ function addButtons() {
     var e = document.getElementsByClassName('base-main-wrapper')[0];
     var links = document.createElement('div');
     links.innerHTML = "<form>" +
-        "<button onclick=\"downloadProfile()\">Save FTL prof.sav</button>" +
-        "<button onclick=\"uploadProfile()\">Restore FTL prof.sav</button>" +
+        "<button id=\"FtlSave\">Save FTL prof.sav</button>" +
+        "<button id=\"FtlRestore\">Restore FTL prof.sav</button>" +
         "<input type=\"file\" id=\"FtlProfSav\" name=\"FtlProfSav\">" +
         "</form>";
     e.insertBefore(links, e.firstChild);
+    document.getElementById('FtlSave').addEventListener('click',
+            downloadProfile, false);
+    document.getElementById('FtlRestore').addEventListener('click',
+            uploadProfile, false);
 }
 
 addButtons();
