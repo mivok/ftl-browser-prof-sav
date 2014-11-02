@@ -4,7 +4,7 @@
 // @version 0.1
 // @author Mark Harrison
 // @description Save/restore prof.sav in FTL browser version
-// @include https://humblebundle.com/home
+// @include https://www.humblebundle.com/home
 // ==/UserScript==
 //
 // Copyright (c) 2014 Mark Harrison
